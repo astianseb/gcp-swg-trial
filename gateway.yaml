@@ -1,0 +1,8 @@
+name: projects/{{PROJECT_ID}}/locations/{{REGION}}/gateways/sg-swg-{{REGION}}
+type: SECURE_WEB_GATEWAY
+ports: [443]
+certificateUrls: ["{{CERTIFICATE}}"]
+gatewaySecurityPolicy: projects/{{PROJECT_ID}}/locations/{{REGION}}/gatewaySecurityPolicies/policy-pl
+network: projects/{{PROJECT_ID}}/global/networks/{{NETWORK}}
+subnetwork: projects/{{PROJECT_ID}}/regions/{{REGION}}/subnetworks/{{SUBNET}}
+scope: {{REGION}}

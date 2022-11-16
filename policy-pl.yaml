@@ -1,0 +1,2 @@
+description: Basic PL web policy
+name: projects/{{PROJECT_ID}}/locations/{{REGION}}/gatewaySecurityPolicies/policy-pl
