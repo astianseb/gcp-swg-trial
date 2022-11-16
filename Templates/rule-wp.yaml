@@ -3,4 +3,4 @@ description: Allow wp.pl
 enabled: true
 priority: 2
 basicProfile: ALLOW
-sessionMatcher: host() == 'wp.pl'
+sessionMatcher: host() == 'www.wp.pl'
