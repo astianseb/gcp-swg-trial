@@ -1,6 +1,0 @@
-name: projects/{{PROJECT_ID}}/locations/{{REGION}}/gatewaySecurityPolicies/policy1/rules/allow-example-com
-description: Allow onet.pl
-enabled: true
-priority: 1
-basicProfile: ALLOW
-sessionMatcher: host() == 'onet.pl'

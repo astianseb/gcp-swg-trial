@@ -1,6 +1,0 @@
-name: projects/{{PROJECT_ID}}/locations/{{REGION}}/gatewaySecurityPolicies/policy1/rules/allow-example-com
-description: Allow wp.pl
-enabled: true
-priority: 2
-basicProfile: ALLOW
-sessionMatcher: host() == 'wp.pl'

@@ -37,7 +37,7 @@ gcloud alpha network-security gateway-security-policies delete policy-pl \
     --location=$REGION \
     --quiet
 
-sleep 30
+sleep 10
 
 gcloud certificate-manager certificates delete sg-swg-myorg-cert \
     --location=$REGION \
@@ -48,7 +48,7 @@ gcloud certificate-manager certificates delete sg-swg-myorg-cert \
 rm ./cert.pem
 rm ./key.pem
 
-cp ./Templates/gateway.yaml ./gateway.yaml
-cp ./Templates/policy-pl.yaml ./policy-pl.yaml
-cp ./Templates/rule-onet.yaml ./rule-onet.yaml
-cp ./Templates/rule-wp.yaml ./rule-wp.yaml
+rm ./gateway.yaml
+rm ./policy-pl.yaml
+rm ./rule-onet.yaml
+rm ./rule-wp.yaml
