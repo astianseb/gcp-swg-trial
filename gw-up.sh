@@ -23,7 +23,7 @@ export SUBNET="subnet-a"
 # Check if REGIONAL_MANAGED_PROXY exist
 if [[ $(gcloud compute networks subnets list --filter="purpose=REGIONAL_MANAGED_PROXY" --format=flattened | wc -c)  -eq 0 ]]; then
     echo "Please configure REGIONAL_MANAGED_PROXY per: https://cloud.google.com/secure-web-gateway/docs/initial-setup-steps#create_a_proxy_subnet"
-    return 0
+    exit 1
 fi
 
 
